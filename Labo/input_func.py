@@ -4,6 +4,8 @@
 # age  = input("would you enter your age ? \n")
 # print("you already have",age,"year's old",name,"!")
 
+
+
 #Exercice 2.1
 #Écrivez un programme qui permet de saisir le nom de l’utilisateur (avec la
 #fonction input()) et de renvoyer "Bonjour", suivi de ce nom.
@@ -28,6 +30,14 @@
 # valeur2 = input("Entre une deuxieme valeur\n")
 # print("la sommes des valeurs est", int(valeur1)+int(valeur2))
 
+#Exercice 2.4
+# import math
+# Xa = float(input("entre l'abscisse Xa du point a\n"))
+# Ya = float(input("entre l'ordonnée Ya du point a\n"))
+# Xb = float(input("entre l'abscisse Xb du point b\n"))
+# Yb = float(input("entre l'ordonnée Yb du point b\n"))
+# print("la distance entre les point a et b est:",math.sqrt((Xb-Xa)**2+(Yb-Ya)**2))
+
 
 #Formating Strings
 # my_age = 45.5
@@ -35,3 +45,7 @@
 # print("%s is my name" % my_name) # use %s for strings
 # print("I am %d's years old"% my_age) # use %d for numerics
 # print("%s is %d year's old"%(my_name,my_age))# can format many params together
+
+#Tabulation
+#a,b,c,d = 18,12.93333333,"allo",435.3333333
+

@@ -46,6 +46,4 @@
 # print("I am %d's years old"% my_age) # use %d for numerics
 # print("%s is %d year's old"%(my_name,my_age))# can format many params together
 
-#Tabulation
-#a,b,c,d = 18,12.93333333,"allo",435.3333333
 

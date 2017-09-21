@@ -38,12 +38,34 @@
 # Yb = float(input("entre l'ordonnée Yb du point b\n"))
 # print("la distance entre les point a et b est:",math.sqrt((Xb-Xa)**2+(Yb-Ya)**2))
 
+#Exercice 2.4
+std1_name = input("Entrez nom de l'etudiant1\n")
+std1_num = int(input("Entrez numero de l'etudiant1\n"))
+std1_grade1= float(input("Entrez note1 de l'etudiant1\n"))
+std1_grade2= float(input("Entrez note2 de l'etudiant1\n"))
 
-#Formating Strings
-# my_age = 45.5
-# my_name = "Brahima"
-# print("%s is my name" % my_name) # use %s for strings
-# print("I am %d's years old"% my_age) # use %d for numerics
-# print("%s is %d year's old"%(my_name,my_age))# can format many params together
+std2_name = input("Entrez nom de l'etudiant2\n")
+std2_num = int(input("Entrez numero de l'etudiant2\n"))
+std2_grade1= float(input("Entrez note1 de l'etudiant2\n"))
+std2_grade2= float(input("Entrez note2 de l'etudiant2\n"))
 
+std3_name = input("Entrez nom de l'etudiant3\n")
+std3_num = int(input("Entrez numero de l'etudiant3\n"))
+std3_grade1= float(input("Entrez note1 de l'etudiant3\n"))
+std3_grade2= float(input("Entrez note2 de l'etudiant3\n"))
+
+print("------------------TABLEAU RECAPUTILATIF------------")
+
+name_formater = "{:>10} {:>6} {:>6} {:>6}"
+num_formater = "{:10} {:6} {:6} {:6}"
+mark_formater = "{:10} {:6.2f} {:6.2f} {:6.2f}"
+average_formater = "{:10} {:6.2f} {:^6} {:6.2f}"
+
+print(name_formater.format(" ",std1_name,std2_name,std3_name))
+print(num_formater.format("NUM",std1_num,std2_num,std3_num))
+print(mark_formater.format("NOTE1",std1_grade1,std2_grade1,std3_grade1))
+print(mark_formater.format("NOTE2",std1_grade2,std2_grade2,std3_grade2))
+print(average_formater.format("MOY/STD",(std1_grade1+std1_grade2)/2,(std2_grade1+std2_grade2)/2,(std3_grade1+std3_grade2)/2))
+print("_______MOYENNE PAR EXAMEN_____")
+print(average_formater.format("MOY/EXAM",(std1_grade1+std2_grade1+std3_grade1)/3,"-",(std1_grade2+std2_grade2+std3_grade2)/3))
 

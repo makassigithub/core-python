@@ -68,3 +68,13 @@ print("-------------------------------------------")
 # formaters are eally handy in formating data output for end users
 for i in range(3,13):
     print("{:3d} {:4d} {:5d}".format(i, i*i, i*i*i))
+
+print("-------------------------------------------")
+
+#Formating Strings using %
+# my_age = 45.5
+# my_name = "Brahima"
+# print("%s is my name" % my_name) # use %s for strings
+# print("I am %d's years old"% my_age) # use %d for numerics
+# print("%s is %d year's old"%(my_name,my_age))# can format many params together
+

@@ -1,40 +1,40 @@
 # Écrivez un programme qui affiche les 20 premiers termes de la table de multiplication par 7.
-a = 0
-while a < 20:
-    a = a+1
-    print(7*a, end=" ")
+# a = 0
+# while a < 20:
+#     a = a+1
+#     print(7*a, end=" ")
 
 #Écrivez un programme qui affiche une table de conversion de sommes d’argent exprimées en
 #euros, en dollars canadiens. La progression des sommes de la table sera « géométrique »,
 #comme dans l’exemple ci-dessous
 
-print("\n")
-e, count = 1, 0
-while e <= 16384:
-    print(e,' euro',' = ',1.65*e,' cad')
-    e = e*2
+# print("\n")
+# e, count = 1, 0
+# while e <= 16384:
+#     print(e,' euro',' = ',1.65*e,' cad')
+#     e = e*2
 
 #Écrivez un programme qui affiche une suite de 12 nombres dont chaque terme soit égal au triple du terme précédent.
 
-b =c = count = 1
-while count <= 12:
-    print(c)
-    b=c
-    c= 3*b
-    count = count +1
+# b =c = count = 1
+# while count <= 12:
+#     print(c)
+#     b=c
+#     c= 3*b
+#     count = count +1
 
 # Premier essai de script Python
 # petit programme simple affichant une suite de Fibonacci, c.à.d. une suite
 # de nombres dont chaque terme est égal à la somme des deux précédents.
 
-print("Suite de Fibonacci :")
-
-a,b,c = 1,1,1              # a & b servent au calcul des termes successifs
-                           # c est un simple compteur
-print(b)                   # affichage du premier terme
-while c<15:                # nous afficherons 15 termes au total
-    a,b,c = b,a+b,c+1
-    print(b)
+# print("Suite de Fibonacci :")
+#
+# a,b,c = 1,1,1              # a & b servent au calcul des termes successifs
+#                            # c est un simple compteur
+# print(b)                   # affichage du premier terme
+# while c<15:                # nous afficherons 15 termes au total
+#     a,b,c = b,a+b,c+1
+#     print(b)
 
 
 #4.5 Écrivez un programme qui calcule le volume d’un parallélépipède rectangle dont sont fournis au départ
@@ -48,10 +48,10 @@ while c<15:                # nous afficherons 15 termes au total
 
 # 5.4 Écrivez un programme qui calcule les intérêts accumulés chaque année pendant 20 ans,
 # par capitalisation d’une somme de 100 euros placée en banque au taux fixe de 4,3 %
-b = 1
-while b <21 :
-    print(b , ': ', b*(100*(4.3/100)))
-    b = b+1
+# b = 1
+# while b <21 :
+#     print(b , ': ', b*(100*(4.3/100)))
+#     b = b+1
 
 #5.5 Une légende de l’Inde ancienne raconte que le jeu d’échecs a été inventé par un vieux sage,
 # que son roi voulut remercier en lui affirmant qu’il lui accorderait n’importe quel cadeau en récompense.
@@ -61,14 +61,28 @@ while b <21 :
 #  Calculez ce nombre de deux manières :
 #  le nombre exact de grains (nombre entier) ;
 #   lenombredegrainsennotationscientifique(nombreréel).
-a,b = 1,1
-while b <=64 :
-   print(b, ' : ', a)
-   a,b = a*2,b+1
+# a,b = 1,1
+# while b <=64 :
+#    print(b, ' : ', a)
+#    a,b = a*2,b+1
+#
+# # Writing as b as float
+# a,b = 1,1.
+# while b < 65 :
+#    print(b, ' : ', a)
+#    a,b = a*2,b+1
 
-# Writing as b as float
-a,b = 1,1.
-while b < 65 :
-   print(b, ' : ', a)
-   a,b = a*2,b+1
+token= int(input("Entrez un nombre entre 1 et 3 (ou 0 pour quitter)\n"))
+while token :   # less expensive than while token != 0
+    if token == 1:
+        print("vous avez entrez UN")
+    elif token == 2:
+        print("vous avez entrez DEUX")
+    elif token == 3:
+        print("vous avez entrez TROIS")
+    else:
+        print("vous devez entrez un nombre entre 1 et 3 s.v.p" )
+    print("Entrez un nombre entre 1 et 3 (ou 0 pour quitter)\n") # indentate under while token, will always print unless 0 is entered
+    token = int(input())
+print("vous avez entrez 0 bye bye......." )
 

@@ -1,0 +1,6 @@
+my_input_stream = open("test.txt","rb")
+bin_data = my_input_stream.read()
+my_input_stream.close()
+print(type(bin_data))
+#char_data = bin_data.decode("utf-8")
+print(type(bin_data.decode()))

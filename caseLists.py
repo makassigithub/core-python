@@ -73,3 +73,48 @@ while compt < len(t6):
     compt = compt + 1
 print("lessThan6: ",lessThan6)
 print("moreThan6: ",moreThan6)
+
+# sum  des elements d'une liste
+def somme(list):
+    '''
+    Calcul la somme d'une liste de nombre passé en argument
+    :param list: la liste de nombra passé en argument
+    :return: la somme retournées.
+    '''
+    total = 0
+    for i in list:
+        total += i
+    return total
+
+
+def element_unique(list):
+    """
+    :param list:
+    :return:
+    """
+    unique = []
+    for i in list:
+        if list.count(i)== 1:
+            unique.append(i)
+    return unique
+
+# Utilisation des methodes de collection
+from collections import Counter
+def element_unique2(liste):
+    return list(Counter(liste).keys())
+
+def element_unique3(liste):
+    uniq = []
+    for i in liste:
+        if i not in uniq:
+            uniq.append(i)
+    return uniq
+
+# a Set is a Collection of unique elements. must be converted to list()
+def element_unique4(ma_liste):
+    return list(set(ma_liste))
+
+
+if __name__ =="__main__":
+    print("somme 1...5: {}".format(somme([1,2,4,5])))
+    print("element_unique: ",element_unique([1, 2, 2,4,4, 5]))

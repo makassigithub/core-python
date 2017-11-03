@@ -19,8 +19,12 @@ myword3 = "temoin"
 iLentgh = 0
 modified = ""
 while iLentgh < len(myword3):
-    modified = modified + myword3[iLentgh] + '*'
+    if iLentgh == len(myword3)-1:
+        modified = modified + myword3[iLentgh]
+    else:
+        modified = modified + myword3[iLentgh] + '*'
     iLentgh = iLentgh + 1
+
 print(modified)
 
 

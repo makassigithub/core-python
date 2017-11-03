@@ -1,4 +1,4 @@
-#The range func generates list from 0 to the indicated border
+#The range func generates list from 0 to the indicated border-1
 # range(stop) or range([start], stop[, step])
 #       start: Starting number of the sequence.
 #       stop: Generate numbers up to, but not including this number.

@@ -1,17 +1,17 @@
-list1 = (10,2,4,2,1,6,8,9)
-list2 = (-10,-2,-4,-2,-1,-17,6,-8,-9)
+tuple1 = (10,2,4,2,1,6,8,9)
+tuple2 = (-10,-2,-4,-2,-1,-17,6,-8,-9)
 
 print("getting the maximun of a list")
 def calculate_max(param):
-    index = 0
-    maxi=param[index]
-    while index < len(param):
-        if param[index] > maxi:
+    index = 0                         # index sur lequel on va looper
+    maxi=param[index]                 # fixation de maxi au premier elemt
+    while index < len(param):         # index_max doit etre len(param)
+        if param[index] > maxi:       # comparasion des elts 1 par 1 et recalcule de max
             maxi = param[index]
         index = index+1
     return maxi
 
-print("maximum:",calculate_max(list2))
+print("maximum:",calculate_max(tuple2))
 
 
 print("getting both the maximun and the minimum of a list")
@@ -25,7 +25,7 @@ def calculate_max_min(param):
             mini = param[index]
         index = index+1
     return maxi,mini
-mx,mn = calculate_max_min(list2)
+mx,mn = calculate_max_min(tuple2)
 print("maxi:", mx,"/", "mini:",mn)
 
 def frog_combine(dist):
